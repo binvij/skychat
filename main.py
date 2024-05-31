@@ -43,7 +43,7 @@ if prompt := st.chat_input("what do you want to know?"):
 			output_text = resp.json()["response"]
 		else:
 			output_text = "An error occurred processing your message. Please try again later"
-			st.chat_message("assistant").markdown(output)
+			st.chat_message("assistant").markdown(output_text)
 
 
 		with st.chat_message("assistant"):
