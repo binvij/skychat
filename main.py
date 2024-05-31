@@ -42,7 +42,7 @@ if prompt := st.chat_input("what do you want to know?"):
 		if resp.status_code == 200:
 			output_text = resp.json()["response"]
 		else:
-			output_text = "An error occurred processing your message. Please try again later"
+			output_text = "I am unable to find the answer for the question. Could you try rephrase the question?"
 			st.chat_message("assistant").markdown(output_text)
 
 
